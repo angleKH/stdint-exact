@@ -63,5 +63,5 @@ Define these macros before inclusion, either through compiler options or the ``#
 * ``STDINT_EXACT_NO_VOLATILE``: This allows the replacement to match more type traits (e.g. ``std::is_trivially_copyable``) at the cost of the ability to use volatile.
 * ``STDINT_EXACT_ATTEMPT_UNDEFINED``: Enables all of the macros below. They attempt to perform undefined behavior in order to make replacements match more closely. The macros can also be enabled individually. This may be useful for using external libraries you have no control over.
 	* ``STDINT_EXACT_INJECT_STD``: Attempt to add the replacements to the std namespace anyway, even though it is undefined behavior for user programs. This is useful when you must use an external library that you cannot change that uses fully qualified type names from ``<cstdint>``.
-	*``STDINT_EXACT_FORCE_TYPE_TRAITS``: Specializes the templates in <type_traits> so that the replacements would match a native one.
+	* ``STDINT_EXACT_FORCE_TYPE_TRAITS``: Specializes the templates in <type_traits> so that the replacements would match a native one.
 
